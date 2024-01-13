@@ -1,4 +1,7 @@
-from locators.main_page_locators import DYNAMIC_ID_PAGE
+from locators.main_page_locators import (
+    DYNAMIC_ID_PAGE,
+    ATTRIBUTE_CLASS_PAGE,
+)
 from pages.base_page import BasePage
 
 
@@ -9,5 +12,8 @@ class PlaygroundMainPage(BasePage):
     def navigate_to_main_page(self):
         self.navigate()
 
-    def navigate_to_dynamic_id(self):
+    def navigate_to_dynamic_id_page(self):
         self.click_on(DYNAMIC_ID_PAGE)
+
+    def navigate_to_class_attribute_page(self):
+        self.click_on(ATTRIBUTE_CLASS_PAGE)
