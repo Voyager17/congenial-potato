@@ -1,3 +1,4 @@
+import allure
 from playwright.sync_api import Page
 
 from locators.class_attribute_locators import (
@@ -9,6 +10,10 @@ from pages.class_attribute_page import AttributeClass
 from pages.playground_main_page import PlaygroundMainPage
 
 
+@allure.title("Test clicking on the wrong buttons on the class attribute page")
+@allure.description(
+    "Test to ensure that primary button works after clicking on the wrong buttons"
+)
 def test_opening_dynamic_id_page(page: Page) -> None:
     main_page = PlaygroundMainPage(page)
     main_page.navigate_to_main_page()
