@@ -1,2 +1,2 @@
-# selenium_project
-This repository is the example of my selenium projects
+# playwright_project
+This repository is the example of my playwright projects
