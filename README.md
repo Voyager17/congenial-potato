@@ -1,2 +1,2 @@
-# congenial-potato
-This repository is for my automation learning
+# selenium_project
+This repository is the example of my selenium projects
